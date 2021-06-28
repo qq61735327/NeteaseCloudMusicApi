@@ -3,12 +3,12 @@ const axios = require('axios')
 const host = global.host || 'http://localhost:3000'
 
 console.log('注意: 测试登录需在 test/login.test.js 中填写账号密码!!!')
-const phone = ''
-const password = ''
+const phone = '18672260043'
+const password = 'bbb2020..'
 describe('测试登录是否正常', () => {
   it('手机登录 code 应该等于200', (done) => {
     const qs = {
-      phone: process.env.NCM_API_TEST_LOGIN_PHONE || phone || '',
+      phone: process.env.NCM_API_TEST_LOGIN_PHONE ||  || '',
       password: process.env.NCM_API_TEST_LOGIN_PASSWORD || password || '',
     }
 
